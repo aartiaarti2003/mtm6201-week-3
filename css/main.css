@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: gainsboro;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
@@ -15,9 +17,21 @@ h6 {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 20px;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+ padding: 7px; 
+ z-index: 100;
+ color#fff;
+ background: #000;
+}
+.skip-link:focus{
+  top:0;
 }
 
 img {
@@ -27,6 +41,7 @@ img {
 .main-nav ul {
   list-style: none;
   display: flex;
+  text align:center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -35,11 +50,12 @@ img {
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  display:inline;
 }
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: #fff;
   text-decoration: none;
   font-size: 1.25rem;
 }
@@ -68,4 +84,7 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+  text-align: center;
+  background: black;
+  color:#fff;
 }
